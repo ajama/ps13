@@ -1,6 +1,6 @@
 class TalksController < ApplicationController
 	
-	respond_to :json, :html
+	respond_to :json
 
 	def index
   		respond_with(@talks = Talk.all)
