@@ -1,0 +1,20 @@
+<h1>Talks</h1>
+
+<script type="text/json" id="bootstrap">
+    {
+        "talks" : <%= @talks.to_json %>
+    }
+</script>
+
+<%= content_for :javascript do -%>
+    <script type = "text/javascript"%>
+        //Ps13App.initialize({ talks: <%== @talks.to_json %> });
+        $(function () {
+            var div = $('<div></div>');
+            div.html('#bootstrap').text());
+            var data = JSON.parse(div.text());
+
+            Ps13App.initialize(data);
+        })
+    </script>
+<% end %>

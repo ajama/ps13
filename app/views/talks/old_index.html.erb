@@ -1,0 +1,46 @@
+<h1> Listing talks </h1>
+
+<table>
+	<tr>
+		<th></th>
+		<th>Room 1</th>
+		<th>Room 2</th>
+		<th>Room 3</th>
+	</tr>
+
+	<tr>
+		<td>08:00-10:00</td>
+		<% @talks.each do |talk| %>
+				<td>Title <%= talk.title %> Speaker: <%= talk.speaker %> Abstract:<%= talk.abstract %> </td>
+		<% end %>
+		</tr>
+
+		<tr>
+		<td>10:00-12:00</td>
+		<% @talks.each do |talk| %>
+			<% if talk.track_number = 2 %>
+				<td>Title <%= talk.title %> Speaker: <%= talk.speaker %> Abstract:<%= talk.abstract %> </td>
+    		<% end %>
+    	<% end %>
+    	</tr>
+
+    	<tr>
+	    <td>13:00-15:00</td>
+		<% @talks.each do |talk| %>
+			<% if talk.track_number = 3 %>
+				<td>Title <%= talk.title %> Speaker: <%= talk.speaker %> Abstract:<%= talk.abstract %> </td>
+			<% end %>
+		<% end %>
+		</tr>
+
+		<tr>
+	    <td>15:00-17:00</td>
+		<% @talks.each do |talk| %>
+			<% if talk.track_number = 4 %>
+				<td>Title <%= talk.title %> Speaker: <%= talk.speaker %> Abstract:<%= talk.abstract %> </td>
+			<% end %>
+		<% end %>
+		</tr>
+
+</table>
+
