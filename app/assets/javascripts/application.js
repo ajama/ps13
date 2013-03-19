@@ -10,18 +10,10 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery-ui-1.8.18.custom.min
+//= require jquery-1.9.1
 //
 //= require underscore
-//= require json2
 //= require backbone
-//= require backbone-support
-//
-//= require backbone-forms.js
-//= require jquery-ui-editors.js
-//= require uploader.js
 //
 //= require ps13_app
 //
