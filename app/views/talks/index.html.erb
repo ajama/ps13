@@ -1,5 +1,7 @@
 <!-- rendered when visiting /talks. Initialize Backbone ink. dependencies, models, collections, routers and views -->
-<h1>Talks</h1>
+<div class="jumbotron">
+    <h1>Talks</h1>
+</div>
 
 <script type="text/json" id="bootstrap">
     {
@@ -18,3 +20,10 @@
         })
     </script>
 <% end %>
+
+<form class="form-register" action="/login" id="login-form">
+    <input type="text" id="name" class="input-block-level" placeholder="Name"><br>
+    <input type="text" id="email" class="input-block-level" placeholder="e-mail"><br>
+    <input type="text" id="company" class="input-block-level" placeholder="Company"><br>
+    <button class="btn btn-primary" id="register">Register</button>
+</form>

@@ -1,3 +1,21 @@
 // Place all the styles related to the talks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-register {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+
+.jumbotron {
+  margin: 80px 0;
+  text-align: center;
+}
