@@ -3,7 +3,6 @@ Ps13App.Views.TalksIndex = Backbone.View.extend({
         this.renderTemplate();
         this.renderTalks();
         return this;
-
     },
 
     renderTemplate: function() {

@@ -4,8 +4,8 @@ var Ps13App = {
 	Views: {},
 	Routers: {},
 	initialize: function(data) {
-		var talks = new Application.Collections.Talks(data.talks);
-		new Application.Routers.Talks({ talks: talks });
+		var talks = new Ps13App.Collections.Talks(data.talks);
+		new Ps13App.Routers.Talks({ talks: talks });
 		if (!Backbone.history.started) { //Backbone.history is undefined if router is not instantiated
 			Backbone.history.start();
 			Backbone.history.started = true;
