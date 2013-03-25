@@ -1,9 +1,8 @@
 Ps13App.Routers.Talks = Backbone.Router.extend({
 
     initialize: function(options) {
+        this.el = $('#talks');
         this.collection = options.collection;
-
-        this.username = $('#username'); //using JQuery to find username
     },
 
 	routes: {
