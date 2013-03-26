@@ -2,6 +2,7 @@ Ps13App.Routers.Talks = Backbone.Router.extend({
 
     initialize: function(options) {
         this.el = $('#talks');
+        console.log("options-argumentet fra ruta til viewet er " + options.collection);
         this.collection = options.collection;
     },
 
@@ -11,6 +12,6 @@ Ps13App.Routers.Talks = Backbone.Router.extend({
 
 	index: function() {
 		var view = new Ps13App.Views.TalksIndex({ collection: this.collection});
-		$('body').html(view.render().$el);
+		$('tbody').html(view.render().$el);
 	}
 });

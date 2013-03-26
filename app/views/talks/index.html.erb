@@ -1,7 +1,4 @@
 <!-- rendered when visiting /talks. Initialize Backbone ink. dependencies, models, collections, routers and views -->
-<div class="jumbotron">
-    <h1>Talks</h1>
-</div>
 
 <script type="text/json" id="bootstrap">
     {
@@ -14,7 +11,7 @@
         $(function () {
             var div = $('<div></div>');
             div.html($('#bootstrap').text()); //bootstrap from the Rails view into the Backbone app to provide initial state
-            var data = JSON.parse(div.text());
+            var data = JSON.parse(div.text()); //JSON-data??????
             Ps13App.initialize(data);
         })
     </script>
