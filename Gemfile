@@ -27,6 +27,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'jasmine'
+  gem 'jasmine-sinon-rails', "~> 1.3.2.1"
 end
 
 # To use ActiveModel has_secure_password

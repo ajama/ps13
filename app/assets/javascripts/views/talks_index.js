@@ -1,8 +1,8 @@
 Ps13App.Views.TalksIndex = Backbone.View.extend({
     initialize: function() {
         _.bindAll(this, "render");
-
     },
+
 	render: function () {
         this.renderTemplate();
         this.renderTalks();
@@ -10,7 +10,7 @@ Ps13App.Views.TalksIndex = Backbone.View.extend({
     },
 
     renderTemplate: function() {
-        this.$el.html(JST['talks/index']({ talks: this.collection })); //templates/talks/index.jst.ejs
+        this.$el.html(JST['talks/index']({ talks: this.collection }));
     },
 
     renderTalks: function() {
