@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ps13</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "ps13_app" %> <!-- replaced "application" with "ps13_app"-->
-  <%= csrf_meta_tags %>
+    <title>Ps13</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag "ps13_app" %>
+    <%= csrf_meta_tags %>
 </head>
+
 <body>
-
-<%= yield %>
-
+<%= yield %> <!--Without any arguments, yield will render the template of the current controller/action-->
 </body>
+
 </html>
