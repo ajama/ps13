@@ -9,13 +9,14 @@
     }
 </script>
 
-<div class="container">
+<div id="tableDiv" class="container">
     <h3>Talks table to be popultated here: </h3>
     <%= content_for :javascript do -%>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript">
         $(document).ready(function () {
             $(function () {
-                var div = $('<div></div>');
+                var div = document.getElementById("tableDiv");//$('<div></div>');
+                alert(div);
                 div.html($('#bootstrap').text());
                 var data = JSON.parse(div.text());
                 Ps13App.initialize(data);
@@ -23,6 +24,7 @@
         });
     </script>
     <% end %>
+    <h3>... end of talks table</h3>
 </div>
 
 <div class="container">

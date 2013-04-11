@@ -44,3 +44,7 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+# gem 'ruby-debug-base', '>= 0.10.5.rc3'
+# gem 'ruby-debug-ide', '>= 0.4.17.beta14'
+
+gem 'rake', '>= 10.0.3'
